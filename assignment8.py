@@ -3,8 +3,6 @@ student = ("Darshan", 24, "IT", 7.12)
 a, b, c, d = student
 print(a, b, c, d)
 
-# 2 -
-
 # 3 - print the union, intersection, difference (set_a - set_b), and symmetric difference.
 set_a = {10, 20, 30, 40}
 set_b = {30, 40, 50, 60}
