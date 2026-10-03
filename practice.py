@@ -1,14 +1,17 @@
-class Dog:
+class Base:
     def sound(self):
-        print("Brak")
+        print("Base sound")
 
-class Cat:
-    def sound(self):
-        print("meow")
-
-
-class Animal(Cat,Dog):
+class Cat(Base):
     pass
 
-a1=Animal()
+class Dog(Base):
+    def sound(self):
+        print("Dog sound")
+
+class Animal(Cat, Dog):
+    pass
+
+a1 = Animal()
 a1.sound()
+print(Animal.__mro__)
